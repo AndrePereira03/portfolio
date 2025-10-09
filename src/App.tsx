@@ -8,15 +8,13 @@ export default function App() {
   return (
     <main className="min-h-screen bg-black text-white">
       <div className="grid min-h-screen grid-cols-1 md:grid-cols-[420px_minmax(0,1fr)]">
-        <aside className="md:sticky md:top-0 md:h-screen md:self-start overflow-hidden bg-black flex flex-col">
-          <div className="relative w-full h-[62vh] md:h-[80vh] lg:h-[90vh]">
+        {/* Sidebar */}
+        <aside className="md:sticky md:top-0 md:h-screen md:self-start overflow-hidden bg-black flex flex-col w-full">
+          <div className="relative w-full h-[65vh] md:h-[90vh]">
             <img
               src="/andre.jpg"
               alt="Foto de André Pereira"
-              className="
-                absolute inset-0 h-full w-full object-cover
-                object-[center_18%] md:object-[center_28%] lg:object-[center_45%]
-              "
+              className="absolute inset-0 h-full w-full object-cover object-[center_45%] md:object-[center_45%] lg:object-[center_45%]"
             />
           </div>
 
@@ -68,76 +66,75 @@ export default function App() {
           </div>
         </aside>
 
-
-        <div className="px-6 py-12 md:px-12">
-          <section className="mx-auto max-w-3xl space-y-28">
-            <section id="sobre">
-              <h2 className="text-3xl font-semibold">Sobre mim</h2>
-              <p className="mt-4 text-lg text-zinc-300">
-                Escrever sobre mim, bla bla bla...
+        {/* Main Content */}
+        <div className="px-6 py-12 md:px-14 flex justify-center">
+          <section className="w-full max-w-[100ch] space-y-40">
+            {/* SOBRE */}
+            <section id="sobre" className="space-y-10">
+              <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
+                Sobre mim
+              </h2>
+              <p className="text-[1.2rem] md:text-[1.35rem] leading-relaxed text-zinc-300 text-justify">
+                Graduando em Ciência da Computação pela UFJF, bolsista do GETCOMP,
+                com experiência em pesquisa aplicada em Inteligência Artificial e Deep Learning,
+                especialmente em Redes Neurais Convolucionais para reconhecimento de imagens.
+                Minha trajetória é marcada por conquistas em competições acadêmicas e de programação,
+                incluindo medalhas em Olimpíadas de Matemática e na Maratona de Programação da SEMCOMP.
+                Na UFJF, já ministrei minicursos de git/github, algoritmos I e II e monitorias.
+                Busco aplicar minha base sólida em algoritmos, bancos de dados e desenvolvimento backend
+                no mercado de tecnologia.
               </p>
             </section>
 
-            <section id="experiencias">
-              <h2 className="text-3xl font-semibold">Experiências</h2>
-              <div className="mt-6 space-y-6">
-                <div className="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6">
-                  <h3 className="text-xl font-medium">GETCOMP · Pesquisador em IA</h3>
-                  <p className="mt-3 text-zinc-400">
-                    Redes neurais convolucionais, projetos Click Cocho, FER2013, reconstrução 3D de folha.
-                    Minicursos de Git e revisão de Algoritmos I/II.
-                  </p>
-                </div>
-                <div className="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6">
-                  <h3 className="text-xl font-medium">IFMG · Monitoria</h3>
-                  <p className="mt-3 text-zinc-400">
-                    Monitor de Administração e Matemática II (2020–2021).
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <section id="tecnologias">
-              <h2 className="text-3xl font-semibold">Tecnologias</h2>
-              <ul className="mt-6 flex flex-wrap gap-3">
-                <li className="rounded-lg border border-zinc-800 bg-zinc-900/40 px-4 py-2 text-sm">Python</li>
-                <li className="rounded-lg border border-zinc-800 bg-zinc-900/40 px-4 py-2 text-sm">Java</li>
-                <li className="rounded-lg border border-zinc-800 bg-zinc-900/40 px-4 py-2 text-sm">TypeScript</li>
-                <li className="rounded-lg border border-zinc-800 bg-zinc-900/40 px-4 py-2 text-sm">JavaScript</li>
-                <li className="rounded-lg border border-zinc-800 bg-zinc-900/40 px-4 py-2 text-sm">PostgreSQL</li>
-                <li className="rounded-lg border border-zinc-800 bg-zinc-900/40 px-4 py-2 text-sm">MySQL</li>
-                <li className="rounded-lg border border-zinc-800 bg-zinc-900/40 px-4 py-2 text-sm">Flask</li>
-                <li className="rounded-lg border border-zinc-800 bg-zinc-900/40 px-4 py-2 text-sm">HTML</li>
-                <li className="rounded-lg border border-zinc-800 bg-zinc-900/40 px-4 py-2 text-sm">CSS</li>
+            {/* TECNOLOGIAS */}
+            <section id="tecnologias" className="space-y-14">
+              <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
+                Tecnologias
+              </h2>
+              <ul className="flex flex-wrap justify-center gap-3">
+                {[
+                  'C++', 'Java', 'JavaScript', 'TypeScript', 'Python',
+                  'HTML', 'CSS', 'MySQL', 'PostgreSQL', 'Flask'
+                ].map((tech) => (
+                  <li
+                    key={tech}
+                    className="rounded-md border border-zinc-800 bg-zinc-900/60 px-3 py-1.5 text-base"
+                  >
+                    {tech}
+                  </li>
+                ))}
               </ul>
             </section>
 
-            <section id="projetos">
-              <h2 className="text-3xl font-semibold">Projetos</h2>
-              <div className="grid min-h-screen grid-cols-1 md:grid-cols-[460px_minmax(0,1fr)]">
-                <a
-                  className="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6 hover:bg-zinc-900 transition"
-                  href="https://github.com/AndrePereira03"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <h3 className="text-xl font-medium">API de Usuários</h3>
-                  <p className="mt-3 text-zinc-400">
-                    CRUD, autenticação JWT, testes e Docker.
+            {/* EXPERIÊNCIA */}
+            <section id="experiencia" className="space-y-14">
+              <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
+                Experiência
+              </h2>
+              <ol className="relative border-l border-zinc-800 pl-6 space-y-14 text-left mx-auto w-fit">
+                <li className="relative">
+                  <span className="absolute -left-[10px] top-1 inline-block h-2.5 w-2.5 rounded-full bg-zinc-400"></span>
+                  <h3 className="text-xl md:text-2xl font-semibold">
+                    Bolsista GETCOMP - UFJF
+                  </h3>
+                  <p className="mt-1 text-sm text-zinc-400">2 anos</p>
+                  <p className="mt-4 text-[1.15rem] leading-relaxed text-zinc-300 text-justify">
+                    Ministrei aulões de Algoritmos I e II, e git/github para estudantes da UFJF.
                   </p>
-                </a>
-                <a
-                  className="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6 hover:bg-zinc-900 transition"
-                  href="https://github.com/AndrePereira03"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <h3 className="text-xl font-medium">FER2013 com CNN</h3>
-                  <p className="mt-3 text-zinc-400">
-                    Pipeline de treino, métricas e matriz de confusão.
+                </li>
+
+                <li className="relative">
+                  <span className="absolute -left-[10px] top-1 inline-block h-2.5 w-2.5 rounded-full bg-zinc-400"></span>
+                  <h3 className="text-xl md:text-2xl font-semibold">
+                    Criação de Sistemas para Clientes Reais
+                  </h3>
+                  <p className="mt-1 text-sm text-zinc-400">Projetos profissionais</p>
+                  <p className="mt-4 text-[1.15rem] leading-relaxed text-zinc-300 text-justify">
+                    Desenvolvimento de sistemas de gestão e APIs para clientes,
+                    aplicando conhecimentos em backend e bancos de dados.
                   </p>
-                </a>
-              </div>
+                </li>
+              </ol>
             </section>
           </section>
         </div>
