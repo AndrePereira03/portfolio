@@ -8,20 +8,27 @@ export default function App() {
   return (
     <main className="min-h-screen bg-black text-white">
       <div className="grid min-h-screen grid-cols-1 md:grid-cols-[420px_minmax(0,1fr)]">
-        <aside className="bg-zinc-900 md:sticky md:top-0 md:h-screen md:self-start overflow-hidden">
-          <div className="relative h-[85vh]">
+        <aside className="md:sticky md:top-0 md:h-screen md:self-start overflow-hidden bg-black flex flex-col">
+          <div className="relative w-full h-[62vh] md:h-[80vh] lg:h-[90vh]">
             <img
               src="/andre.jpg"
               alt="Foto de André Pereira"
-              className="absolute inset-0 h-full w-full object-cover object-[center_30%]"
+              className="
+                absolute inset-0 h-full w-full object-cover
+                object-[center_18%] md:object-[center_28%] lg:object-[center_45%]
+              "
             />
           </div>
 
-          <div className="px-8 py-8">
-            <h1 className="text-3xl font-extrabold tracking-tight">André Martins Pereira</h1>
-            <p className="mt-2 text-lg text-zinc-300">Desenvolvedor Backend</p>
+          <div className="flex-1 bg-zinc-900 px-8 py-8 flex flex-col justify-between">
+            <div className="flex flex-col items-center text-center">
+              <h1 className="text-3xl font-extrabold tracking-tight whitespace-nowrap overflow-hidden text-ellipsis">
+                André Martins Pereira
+              </h1>
+              <p className="mt-2 text-lg text-zinc-300">Desenvolvedor Backend</p>
+            </div>
 
-            <div className="mt-6 flex items-center gap-4">
+            <div className="mt-12 flex items-center justify-center gap-4">
               <a
                 href="https://github.com/AndrePereira03"
                 target="_blank"
@@ -33,6 +40,7 @@ export default function App() {
                   <path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.1-.75.08-.73.08-.73 1.22.09 1.86 1.25 1.86 1.25 1.08 1.85 2.83 1.32 3.52 1.01.11-.78.42-1.32.77-1.63-2.67-.3-5.48-1.34-5.48-5.96 0-1.32.47-2.4 1.24-3.25-.12-.3-.54-1.52.12-3.16 0 0 1.01-.32 3.3 1.24a11.5 11.5 0 0 1 6 0c2.29-1.56 3.3-1.24 3.3-1.24.66 1.64.24 2.86.12 3.16.77.85 1.24 1.93 1.24 3.25 0 4.63-2.82 5.66-5.5 5.96.43.37.82 1.11.82 2.25v3.34c0 .32.21.69.83.57A12 12 0 0 0 12 .5z" />
                 </svg>
               </a>
+
               <a
                 href="https://www.linkedin.com/in/devandrepereira/"
                 target="_blank"
@@ -44,6 +52,7 @@ export default function App() {
                   <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V24h-4V8.5zm7.5 0h3.84v2.11h.05c.53-1 1.84-2.11 3.79-2.11 4.05 0 4.8 2.67 4.8 6.15V24h-4v-7.14c0-1.7-.03-3.89-2.37-3.89-2.37 0-2.73 1.85-2.73 3.77V24h-3.98V8.5z" />
                 </svg>
               </a>
+
               <a
                 href="http://lattes.cnpq.br/1206826904930873"
                 target="_blank"
@@ -105,7 +114,7 @@ export default function App() {
 
             <section id="projetos">
               <h2 className="text-3xl font-semibold">Projetos</h2>
-              <div className="mt-6 grid gap-6 md:grid-cols-2">
+              <div className="grid min-h-screen grid-cols-1 md:grid-cols-[460px_minmax(0,1fr)]">
                 <a
                   className="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6 hover:bg-zinc-900 transition"
                   href="https://github.com/AndrePereira03"
