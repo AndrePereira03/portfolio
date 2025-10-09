@@ -23,7 +23,7 @@ export default function App() {
               <h1 className="text-3xl font-extrabold tracking-tight whitespace-nowrap overflow-hidden text-ellipsis">
                 André Martins Pereira
               </h1>
-              <p className="mt-2 text-lg text-zinc-300">Desenvolvedor Backend</p>
+              <p className="mt-2 text-lg text-zinc-300">Desenvolvedor Back-end</p>
             </div>
 
             <div className="mt-12 flex items-center justify-center gap-4">
@@ -69,20 +69,21 @@ export default function App() {
         {/* Main Content */}
         <div className="px-6 py-12 md:px-14 flex justify-center">
           <section className="w-full max-w-[100ch] space-y-40">
-            {/* SOBRE */}
+            {/* MINHA APRESENTAÇÃO */}
             <section id="sobre" className="space-y-10">
               <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
-                Sobre mim
+                Olá, sou André Pereira!
               </h2>
               <p className="text-[1.2rem] md:text-[1.35rem] leading-relaxed text-zinc-300 text-justify">
-                Graduando em Ciência da Computação pela UFJF, bolsista do GETCOMP,
+                Graduando em Ciência da Computação pela UFJF, bolsista do GETCOMP (2023-2024),
                 com experiência em pesquisa aplicada em Inteligência Artificial e Deep Learning,
                 especialmente em Redes Neurais Convolucionais para reconhecimento de imagens.
                 Minha trajetória é marcada por conquistas em competições acadêmicas e de programação,
                 incluindo medalhas em Olimpíadas de Matemática e na Maratona de Programação da SEMCOMP.
-                Na UFJF, já ministrei minicursos de git/github, algoritmos I e II e monitorias.
-                Busco aplicar minha base sólida em algoritmos, bancos de dados e desenvolvimento backend
-                no mercado de tecnologia.
+                Na UFJF, desenvolvi inúmeras aplicações back-end, criei e prototipei softwares para
+                clientes reais e ministrei minicursos de git/github, algoritmos I e II e monitorias.
+                Atualmente, busco aplicar minha base sólida em algoritmos, bancos de dados e desenvolvimento
+                back-end no mercado de tecnologia.
               </p>
             </section>
 
@@ -94,7 +95,7 @@ export default function App() {
               <ul className="flex flex-wrap justify-center gap-3">
                 {[
                   'C++', 'Java', 'JavaScript', 'TypeScript', 'Python',
-                  'HTML', 'CSS', 'MySQL', 'PostgreSQL', 'Flask'
+                  'HTML', 'CSS', 'MySQL', 'PostgreSQL', 'Flask',
                 ].map((tech) => (
                   <li
                     key={tech}
@@ -111,27 +112,60 @@ export default function App() {
               <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
                 Experiência
               </h2>
+
               <ol className="relative border-l border-zinc-800 pl-6 space-y-14 text-left mx-auto w-fit">
                 <li className="relative">
-                  <span className="absolute -left-[10px] top-1 inline-block h-2.5 w-2.5 rounded-full bg-zinc-400"></span>
+                  <span className="absolute -left-[16px] top-1 inline-block h-2.5 w-2.5 rounded-full bg-zinc-400"></span>
                   <h3 className="text-xl md:text-2xl font-semibold">
                     Bolsista GETCOMP - UFJF
                   </h3>
                   <p className="mt-1 text-sm text-zinc-400">2 anos</p>
                   <p className="mt-4 text-[1.15rem] leading-relaxed text-zinc-300 text-justify">
-                    Ministrei aulões de Algoritmos I e II, e git/github para estudantes da UFJF.
+                    Pesquisei, ministrei aulões de Algoritmos I e II, e minicursos de git/github para estudantes da UFJF.
                   </p>
                 </li>
 
                 <li className="relative">
-                  <span className="absolute -left-[10px] top-1 inline-block h-2.5 w-2.5 rounded-full bg-zinc-400"></span>
+                  <span className="absolute -left-[16px] top-1 inline-block h-2.5 w-2.5 rounded-full bg-zinc-400"></span>
                   <h3 className="text-xl md:text-2xl font-semibold">
                     Criação de Sistemas para Clientes Reais
                   </h3>
                   <p className="mt-1 text-sm text-zinc-400">Projetos profissionais</p>
                   <p className="mt-4 text-[1.15rem] leading-relaxed text-zinc-300 text-justify">
-                    Desenvolvimento de sistemas de gestão e APIs para clientes,
-                    aplicando conhecimentos em backend e bancos de dados.
+                    Desenvolvimento de sistemas de gestão e APIs para clientes, aplicando conhecimentos em backend e bancos de dados.
+                  </p>
+                </li>
+
+                <li className="relative">
+                  <span className="absolute -left-[16px] top-1 inline-block h-2.5 w-2.5 rounded-full bg-zinc-400"></span>
+                  <h3 className="text-xl md:text-2xl font-semibold">
+                    4º lugar Hackaton Rerum Engenharia de Sistemas SEMCOMP 2022
+                  </h3>
+                  <p className="mt-1 text-sm text-zinc-400">Competição acadêmica</p>
+                  <p className="mt-4 text-[1.15rem] leading-relaxed text-zinc-300 text-justify">
+                    Quarta colocação no Hackaton Rerum Engenharia de Sistemas da SEMCOMP 2022.
+                  </p>
+                </li>
+
+                <li className="relative">
+                  <span className="absolute -left-[16px] top-1 inline-block h-2.5 w-2.5 rounded-full bg-zinc-400"></span>
+                  <h3 className="text-xl md:text-2xl font-semibold">
+                    Medalha de Prata – Maratona SEMCOMP 2022
+                  </h3>
+                  <p className="mt-1 text-sm text-zinc-400">Programação competitiva</p>
+                  <p className="mt-4 text-[1.15rem] leading-relaxed text-zinc-300 text-justify">
+                    Segunda colocação na Maratona de Programação da SEMCOMP 2022.
+                  </p>
+                </li>
+
+                <li className="relative">
+                  <span className="absolute -left-[16px] top-1 inline-block h-2.5 w-2.5 rounded-full bg-zinc-400"></span>
+                  <h3 className="text-xl md:text-2xl font-semibold">
+                    Multi-medalhista em Olimpíadas de Matemática
+                  </h3>
+                  <p className="mt-1 text-sm text-zinc-400">Conquistas acadêmicas</p>
+                  <p className="mt-4 text-[1.15rem] leading-relaxed text-zinc-300 text-justify">
+                    Conquistas em KANGOUROU SANS FRONTIÈRES (internacional), OBMEP, OBA, OMIF e OISMF.
                   </p>
                 </li>
               </ol>
