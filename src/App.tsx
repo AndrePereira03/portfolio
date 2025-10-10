@@ -94,8 +94,16 @@ export default function App() {
               </h2>
               <ul className="flex flex-wrap justify-center gap-3">
                 {[
-                  'C++', 'Java', 'JavaScript', 'TypeScript', 'Python',
-                  'HTML', 'CSS', 'MySQL', 'PostgreSQL', 'Flask',
+                  'C++',
+                  'Java',
+                  'JavaScript',
+                  'TypeScript',
+                  'Python',
+                  'HTML',
+                  'CSS',
+                  'MySQL',
+                  'PostgreSQL',
+                  'Flask',
                 ].map((tech) => (
                   <li
                     key={tech}
@@ -169,6 +177,84 @@ export default function App() {
                   </p>
                 </li>
               </ol>
+            </section>
+
+            {/* PROJETOS */}
+            <section id="projetos" className="space-y-10">
+              <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
+                Projetos
+              </h2>
+
+              <div className="grid gap-6 md:grid-cols-2">
+                {/* cashflow */ }
+                <a
+                  href="https://www.figma.com/proto/YAQeithaZjxWe4aP1kCiML/CashFlowApp?node-id=350-11343&starting-point-node-id=350%3A11343&t=U0u6ZcHizrzZvsR3-1"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group block cursor-pointer rounded-xl border border-zinc-800 bg-zinc-900/60 p-6 hover:border-zinc-700 hover:bg-zinc-900/80 hover:shadow-lg hover:scale-[1.02] transition-transform duration-200"
+                >
+                  <div className="flex items-center justify-between text-xl font-semibold">
+                    <span>CashFlowApp</span>
+                    <span className="text-zinc-400 text-2xl group-hover:text-white group-hover:translate-x-1.5 group-hover:scale-110 transition-all duration-200">
+                      →
+                    </span>
+                  </div>
+                  <p className="mt-3 text-zinc-300 leading-relaxed text-justify">
+                    Aplicativo de gestão financeira para microempresários. Atuei como <strong>Product Owner</strong>,
+                    entendendo as necessidades do cliente, o perfil do público e conduzindo a modelagem do sistema.
+                  </p>
+                </a>
+
+                {/* consulta facil */}
+                <a
+                  href="https://github.com/AndrePereira03/consultaFacil"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group block cursor-pointer rounded-xl border border-zinc-800 bg-zinc-900/60 p-6 hover:border-zinc-700 hover:bg-zinc-900/80 hover:shadow-lg hover:scale-[1.02] transition-transform duration-200"
+                >
+                  <div className="flex items-center justify-between text-xl font-semibold">
+                    <span>ConsultaFácil</span>
+                    <span className="text-zinc-400 text-2xl group-hover:text-white group-hover:translate-x-1.5 group-hover:scale-110 transition-all duration-200">
+                      →
+                    </span>
+                  </div>
+                  <p className="mt-3 text-zinc-300 leading-relaxed text-justify">
+                    API para gestão de pacientes. Desenvolvi o <strong>back-end</strong> da aplicação, criando rotas REST,
+                    <strong> modelando o banco de dados e implementando testes </strong>de unidade (pytest) e testes de integração (Insomnia).
+                  </p>
+                </a>
+
+                {/* e-commerce */}
+                <div className="relative rounded-xl border border-zinc-800 bg-zinc-900/60 p-6 hover:border-zinc-700 hover:bg-zinc-900/80 transition">
+                  <span className="absolute top-0 right-0 bg-yellow-500 text-black text-xs font-semibold px-2 py-1 rounded-bl-lg">
+                    Em desenvolvimento
+                  </span>
+                  <div className="text-xl font-semibold">E-commerce</div>
+                  <p className="mt-3 text-zinc-300 leading-relaxed text-justify">
+                    Projeto pessoal visando consolidar <strong>princípios de POO</strong> (herança, polimorfismo,
+                    encapsulamento), <strong>arquitetura de software e boas práticas.</strong>
+                  </p>
+                </div>
+
+                {/* FER2013 */ }
+                <a
+                  href="https://www.kaggle.com/datasets/msambare/fer2013"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group block cursor-pointer rounded-xl border border-zinc-800 bg-zinc-900/60 p-6 hover:border-zinc-700 hover:bg-zinc-900/80 hover:shadow-lg hover:scale-[1.02] transition-transform duration-200"
+                >
+                  <div className="flex items-center justify-between text-xl font-semibold">
+                    <span>FER 2013</span>
+                    <span className="text-zinc-400 text-2xl group-hover:text-white group-hover:translate-x-1.5 group-hover:scale-110 transition-all duration-200">
+                      →
+                    </span>
+                  </div>
+                  <p className="mt-3 text-zinc-300 leading-relaxed text-justify">
+                    Infelizmente, o github do projeto é privado e possui propriedade intelectual da UFJF
+                    e não posso compartilhá-lo, mesmo tendo o desenvolvido.
+                  </p>
+                </a>
+              </div>
             </section>
           </section>
         </div>
