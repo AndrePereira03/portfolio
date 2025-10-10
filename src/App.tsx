@@ -256,6 +256,42 @@ export default function App() {
                 </a>
               </div>
             </section>
+
+            {/* CERTIFICADOS */}
+            <section id="certificados" className="space-y-10">
+              <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
+                Certificados
+              </h2>
+
+              <div className="flex flex-col items-center text-center space-y-6">
+                <p className="text-[1.15rem] leading-relaxed text-zinc-300 max-w-[75ch] text-justify">
+                  Acesse meus certificados de monitorias, olimpíadas e também de minicursos ministrados!
+                </p>
+
+                <a
+                  href="https://drive.google.com/drive/folders/1bGWD-r-NZT6g60D_j0fMYcYQgyL-4ncc?usp=drive_link"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center gap-2 rounded-lg border border-zinc-700 bg-zinc-900/60 px-6 py-3 text-lg font-medium text-white hover:bg-zinc-800 hover:scale-[1.02] hover:shadow-lg transition-transform duration-200"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.8}
+                    stroke="currentColor"
+                    className="h-6 w-6 text-blue-500 group-hover:text-blue-400 transition"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M7 8h10M7 12h10m-9 4h9m-9-8V5a2 2 0 012-2h6a2 2 0 012 2v3M5 8h14v12a2 2 0 01-2 2H7a2 2 0 01-2-2V8z"
+                    />
+                  </svg>
+                  Acessar certificados
+                </a>
+              </div>
+            </section>
           </section>
         </div>
       </div>
